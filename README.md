@@ -1,9 +1,25 @@
 # SASS Utils
 
-###Collection of mixins to improve browser compatibility issues and increase CSS development speed.
+###Collection of sass mixins to improve browser compatibility issues and increase CSS development speed.
 
 
 
+## How to use it
+Import **utils.scss** in the main scss file to make it available in your project.
+
+```
+@import "utils.scss";
+```
+
+Below are an explanation of the different mixins:
+
+###Linear Gradient (linGrad)
+
+```
+// Generates linear and vertical gradients with two colors.
+
+@include linGrad(#F00, #C00);
+```
 
 
 ## Version history
