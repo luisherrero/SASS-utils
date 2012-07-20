@@ -2,7 +2,7 @@
 
 /* Gradients */
 
-@mixin linGrad ($colorA, $colorB)
+@mixin linearGradient ($colorA, $colorB)
 {
 	background: colorA;
     background-image: -webkit-linear-gradient(top, $colorA, $colorB);
@@ -10,4 +10,21 @@
     background-image: -ms-linear-gradient(top, $colorA, $colorB);
     background-image: -o-linear-gradient(top, $colorA, $colorB);
     background-image: linear-gradient(top, bottom, $colorA, $colorB);
+}
+
+
+
+/* Font Face */
+
+@mixin fontFace($font)
+{
+	@font-face
+	{
+		font-family: $font;
+		src: url('#{$font}.eot?');
+		src: url('#{$font}.eot?#iefix') format('embedded-opentype'),
+		     url('#{$font}.woff') format('woff'),
+		     url('#{$font}.ttf') format('truetype'),
+		     url('#{$font}.svg##{$font}') format('svg');
+	}
 }

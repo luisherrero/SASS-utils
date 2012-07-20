@@ -13,12 +13,20 @@ Import **utils.scss** in the main scss file to make it available in your project
 
 Below are an explanation of the different mixins:
 
-###Linear Gradient (linGrad)
+###Linear Gradient (linearGradient)
 
 ```
 // Generates linear and vertical gradients with two colors.
 
 @include linGrad(#F00, #C00);
+```
+
+###@font-face (fontface)
+
+```
+// Generates bulletproof font-face syntax.
+
+@include fotface(iconFont);
 ```
 
 
