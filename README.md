@@ -26,7 +26,7 @@ Below are an explanation of the different mixins:
 ```
 // Generates bulletproof font-face syntax.
 
-@include fotface(iconFont);
+@include fontface(iconFont);
 ```
 
 
