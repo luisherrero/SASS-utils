@@ -22,11 +22,13 @@ Below are an explanation of the different mixins:
 ```
 
 ##@font-face (fontface)
+This mixin needs two arguments.
+The first one is the name of the font we're going to use in the CSS. The second one is the url with the file name but without extension.
 
 ```
 // Generates bulletproof font-face syntax.
 
-@include fontface(iconFont);
+@include fontFace('CoolFont', '/fonts/CoolFont');
 ```
 
 

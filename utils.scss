@@ -1,7 +1,4 @@
 
-
-/* Gradients */
-
 @mixin linearGradient ($colorA, $colorB)
 {
 	background: colorA;
@@ -14,17 +11,15 @@
 
 
 
-/* Font Face */
-
-@mixin fontFace($font)
+@mixin fontFace($fontName, $fontUrl)
 {
 	@font-face
 	{
-		font-family: $font;
-		src: url('#{$font}.eot?');
-		src: url('#{$font}.eot?#iefix') format('embedded-opentype'),
-		     url('#{$font}.woff') format('woff'),
-		     url('#{$font}.ttf') format('truetype'),
-		     url('#{$font}.svg##{$font}') format('svg');
+		font-family: $fontName;
+		src: url('#{$fontUrl}.eot?');
+		src: url('#{$fontUrl}.eot?#iefix') format('embedded-opentype'),
+		     url('#{$fontUrl}.woff') format('woff'),
+		     url('#{$fontUrl}.ttf') format('truetype'),
+		     url('#{$fontUrl}.svg##{$font}') format('svg');
 	}
 }
