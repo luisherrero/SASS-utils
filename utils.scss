@@ -20,6 +20,6 @@
 		src: url('#{$fontUrl}.eot?#iefix') format('embedded-opentype'),
 		     url('#{$fontUrl}.woff') format('woff'),
 		     url('#{$fontUrl}.ttf') format('truetype'),
-		     url('#{$fontUrl}.svg##{$font}') format('svg');
+		     url('#{$fontUrl}.svg##{$fontName}') format('svg');
 	}
 }
